@@ -4,7 +4,7 @@ var mySingleton = (function() {
 
 	function init() {
 
-		var myPrivateProperty = "My private Property";
+		var myPrivateProperty = Math.random();
 
 		function myPrivateFunction() {
 			return "my private function";
@@ -21,11 +21,18 @@ var mySingleton = (function() {
 	}
 
 	return {
-		if (!instance) {
-			instance = int();
-		}
+		getInstance : function() {
+			if (!instance) {
+				instance = init();
+			}
 
-		return instance;
+			return instance;
+		}
 	}
 
 })();
+
+var mySingleton1 = mySingleton.getInstance();
+var mySingleton2 = mySingleton.getInstance();
+
+console.log(mySingleton1 === mySingleton2);
