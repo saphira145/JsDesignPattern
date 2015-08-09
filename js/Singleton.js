@@ -35,4 +35,4 @@ var mySingleton = (function() {
 var mySingleton1 = mySingleton.getInstance();
 var mySingleton2 = mySingleton.getInstance();
 
-console.log(mySingleton1 === mySingleton2);
+// /console.log(mySingleton1 === mySingleton2);

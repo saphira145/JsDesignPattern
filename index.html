@@ -1,10 +1,40 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/Singleton.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 <body>
+	
+<div class="container-fluid">
+	<ul class="images-list">
+		<script type="text/template" id="images-list">
+			{{#images}}
+				<li index="{{id}}">
+					<a href="javascript:void(0)" style="background-image: url('{{url}}')"></a>
+				</li>
+			{{/images}}
+
+		</script>
+	</ul>	
+
+	<ul class="slider">
+		
+	</ul>
+</div>
+
+
+<!-- js go here -->
+<script type="text/javascript" src="js/data.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/mustache.min.js"></script>
+<script type="text/javascript" src="js/Singleton.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+
 
 </body>
 </html>
