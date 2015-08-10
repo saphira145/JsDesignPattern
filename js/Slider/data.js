@@ -18,6 +18,12 @@ var images = [
 		url : 'images/big3.jpg'
 	},
 	{
+		id : 4,
+		name : "image-1",
+		description : "description-1",
+		url : 'images/big1.jpg'
+	},
+	{
 		id : 5,
 		name : "image-4",
 		description : "description-4",

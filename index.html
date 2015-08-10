@@ -4,6 +4,9 @@
 	<title></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slider/slider.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta http-equiv="content-type" charset="UTF-8" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	
@@ -20,10 +23,20 @@
 	</ul>	
 
 	<ul class="slider">
+		<script type="text/template" id="images-slider">
+			<span class="left-arrow"><i class="fa fa-chevron-left"></i></span>
+			<span class="right-arrow"><i class="fa fa-chevron-right"></i></span>
+			{{#images}}
+				<li index="{{id}}">
+					<a href="javascript:void(0)" style="background-image: url('{{url}}')"></a>
+				</li>
+			{{/images}}
 
+		</script>
 	</ul>
 </div>
 
+<div class="overlay"></div>
 
 <!-- js go here -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
