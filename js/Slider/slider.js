@@ -21,7 +21,7 @@ var imageListBuilder = (function() {
 	return {
 		getImagesListSelector : function() {
 			return $imageList;
-		},
+		}
 	}
 
 })();
@@ -55,7 +55,7 @@ var slider = (function() {
 	function buildSlider() {
 		var html = Mustache.to_html(template, data);
 		$slider.html(html);
-		$slider.css('width', widthWindow * 14 + 'px');
+		// $slider.css('width', widthWindow * 14 + 'px');
 	}
 
 	// Slider Popup when click
@@ -84,8 +84,8 @@ var slider = (function() {
 	function showImageAtPosition(index) {
 		$overlay.show();
 		$slider.show();
-		// $slider.find("li").hide();	
-		// $slider.find("li[index='"+ index +"']").show();
+		$slider.find("li").hide();	
+		$slider.find("li[index='"+ index +"']").show();
 	}
 
 	// Close slider
